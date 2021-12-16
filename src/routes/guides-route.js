@@ -7,6 +7,7 @@ const router = express.Router()
 
 router.get('/guides', guideController.index)
 router.post('/signup', guideController.create)
+router.post('/login', guideController.login)
 router.put('/guides/:id', guideController.update)
 router.delete('/guides/:id', guideController.destroy)
 
